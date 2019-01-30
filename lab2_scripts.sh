@@ -26,7 +26,7 @@ grep "303-" regex_practice.txt > phone_numbers.txt
 echo "Write all @geocities.com email addresses"
 grep -F "@geocities.com" regex_practice.txt > email_results.txt
 echo "Write all valid CL regular expressions"
-grep $0 regex_practice.txt > command_results.txt
+grep $1 regex_practice.txt > command_results.txt
 
 #Step 4 Code:
 git add "phone_numbers.txt"
