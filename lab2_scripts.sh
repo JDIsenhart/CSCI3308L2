@@ -17,7 +17,8 @@ grep -c -E "[0-9]{3}-[0-9]{3}" regex_practice.txt
 #Write output out for quality check
 grep -E "[0-9]{3}-[0-9]{3}" regex_practice.txt > P3S1.txt
 echo "Number of Email Addresses:"
-grep -c "@" regex_practice.txt > email_results.txt 
+grep -c "@" regex_practice.txt
+grep "@" regex_practice.txt > email_results.txt 
 #Write output for quality check
 grep -F "@" regex_practice.txt > P3S2.txt
 echo "Write all \"303\" Area Code Phone Numbers:"
