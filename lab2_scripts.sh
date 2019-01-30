@@ -12,11 +12,13 @@ read filename
 grep $regex $filename
 
 #Step 3 Code:
-echo "Number of Phone Numbers: "
+echo "All of the Phone Numbers: "
+grep -E "[0-9]{3}-[0-9]{3}" regex_practice.txt
 grep -c -E "[0-9]{3}-[0-9]{3}" regex_practice.txt
 #Write output out for quality check
 grep -E "[0-9]{3}-[0-9]{3}" regex_practice.txt > P3S1.txt
-echo "Number of Email Addresses:"
+echo "Email Addresses:"
+grep "@" regex_practice.txt
 grep -c "@" regex_practice.txt
 grep "@" regex_practice.txt > email_results.txt 
 #Write output for quality check
